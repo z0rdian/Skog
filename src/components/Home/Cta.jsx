@@ -11,7 +11,6 @@ const Cta = () => {
                 <h4 className="tp-title mb-40">
                   ¿Necesitás asistencia personalizada para tu negocio?
                 </h4>
-                <h4 className="tp-title mb-40">¿Necesitas asistencia personalizada para tu negocio?</h4>
                 <div className="tpcta-button">
                   <Link href="/contact">
                     <a className="tp-solid-btn">Contactanos</a>
