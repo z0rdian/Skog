@@ -3,12 +3,12 @@
 // sidebar
 .sidebar{
     &__area{
-        position: fixed;
+        position: absolute;
         right: -495px;
         top: 0;
         width: 465px;
         height: 100%;
-        background: var(--tp-common-white)  none repeat scroll 0 0;
+        background: #002626 none repeat scroll 0 0;
         overflow-y: scroll;
         @include box-shadow(-5px 0 20px -5px rgba(0, 0, 0, 0.5));
         z-index: 999;
@@ -30,7 +30,7 @@
         }
   
         &.sidebar-opened{
-            right: 0px;
+            right: 0vw;
         }
     }
     &__wrapper{
@@ -132,7 +132,7 @@
                 line-height: 40px;
                 text-align: center;
                 border: 1px solid var(--tp-border-1);
-                color: var(--tp-heading-primary);
+                color: #ffffff;
                 @include border-radius(7px);
             }
         }

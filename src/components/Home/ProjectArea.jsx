@@ -4,19 +4,19 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper";
 import projectSliderData from '../../data/portfolioData';
 
-const projectData = projectSliderData.slice(0, 5)
+const projectData = projectSliderData.slice(0, 4)
 
 const ProjectArea = () => {
 
   return (
     <>
-      <section className="tpproject-area pb-110 p-relative">
+      <section id="fertilizantes" className="tpproject-area pb-110 pt-60 p-relative">
         <div className="container">
           <div className="row">
             <div className="col-xl-12">
               <div className="tp-section-title text-center">
-                <span className="tp-sub-title mb-15">#Complete Project</span>
-                <h2 className="tp-title">My Recent Works</h2>
+                {/* <span className="tp-sub-title mb-15">#Complete Project</span> */}
+                <h2 className="tp-title">Línea de Fertilizantes</h2>
               </div>
             </div>
           </div>
@@ -83,13 +83,13 @@ const ProjectArea = () => {
               </div>
             </div>
           </div>
-          <div className="tpproject__shape-star tpproject__shape-star-1">
+          {/* <div className="tpproject__shape-star tpproject__shape-star-1">
             <svg width="19" height="17" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M14 0L17.1432 9.67376H27.3148L19.0858 15.6525L22.229 25.3262L14 19.3475L5.77101 25.3262L8.9142 15.6525L0.685208 9.67376H10.8568L14 0Z"
                 fill="#FFCC41" />
             </svg>
-          </div>
+          </div> */}
         </div>
       </section>
     </>

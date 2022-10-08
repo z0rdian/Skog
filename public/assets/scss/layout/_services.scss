@@ -17,7 +17,8 @@
 }
 .tpservices{
     padding: 50px 35px;
-    background: var(--tp-common-white);
+    // background: var(--tp-common-white);
+    background: #002626;
     @include transition(.3s);
     &-2{
         border: 1px solid var(--tp-border-1);
@@ -207,7 +208,7 @@
         position: absolute;
         content: '';
         height: 3px;
-        background: linear-gradient(260.16deg, #1C99FE 9.94%, #7644FF 54.82%, #FD4766 95.56%);
+        background: linear-gradient(260.16deg,#4fd127 9.94%,#e1fa00 54.82%,#104702 95.56%);
         bottom: 0;
         width: 0%;
         visibility: hidden;

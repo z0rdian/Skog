@@ -26,9 +26,9 @@ const Footer = () => {
                <div className="col-xl-6 col-lg-6 col-md-6">
                   <div className="footer__widget footer-col-1">
                      <div className="tp-section-title">
-                        <span className="tp-sub-title mb-15">#Contact INfo</span>
-                        <h2 className="tp-title tp-title-df mb-20">Any Question?</h2>
-                        <p>Methods and techniques to taking raw data - mining for insights and years of experience.</p>
+                        <span className="tp-sub-title mb-15">#Contacto</span>
+                        <h2 className="tp-title tp-title-df mb-20">¿Alguna pregunta?</h2>
+                        <p className="d-none">Methods and techniques to taking raw data - mining for insights and years of experience.</p>
                      </div>
                      <div className="footer__lists mt-40">
                         <div className="footer__list-item mb-40">
@@ -37,8 +37,8 @@ const Footer = () => {
                            </div>
                            <div className="footer__list-text">
                               <p>
-                                <a href="https://goo.gl/maps/iAY7xEk5PGbqwBWf6" target="blank">
-                                  Ta-134/A, Gulshan Badda Link Rd, Nya 10982 USA </a>
+                                <a href="#" target="blank">
+                                    C.A.B.A - Argentina </a>
                                 </p>
                            </div>
                         </div>
@@ -47,8 +47,8 @@ const Footer = () => {
                               <i className="fas fa-envelope"></i>
                            </div>
                            <div className="footer__list-text">
-                              <p><a href="mailto:rasalinawillam@gmail.com">rasalinawillam@gmail.com</a></p>
-                              <p><a href="mailto:info@gmail.com">info@gmail.com</a></p>
+                              <p><a href="mailto:rskog@gmail.com">skog@gmail.com</a></p>
+                              <p><a href="mailto:skog@gmail.com">skog@gmail.com</a></p>
                            </div>
                         </div>
                         <div className="footer__list-item mb-40">
@@ -66,24 +66,24 @@ const Footer = () => {
                <div className="col-xl-6 col-lg-6 col-md-6">
                   <div className="footer__widget footer-col-2">
                      <div className="tp-section-title">
-                        <span className="tp-sub-title mb-15">#Get In Touch</span>
-                        <h2 className="tp-title tp-title-df mb-20">Let’s Say Hi</h2>
+                        <span className="tp-sub-title mb-15">#Díganos</span>
+                        <h2 className="tp-title tp-title-df mb-20">Comuníquese ahora</h2>
                      </div>
                      <form id="contact-form" onSubmit={handleSubmit}>
                         <div className="contact-filed mb-20">
-                        <input id='name' value={values.name} onChange={handleChange} onBlur={handleBlur} type="text" placeholder="Enter Name" />
+                        <input id='name' value={values.name} onChange={handleChange} onBlur={handleBlur} type="text" placeholder="Nombre" />
                           {touched.name && <ErrorMsg error={errors.name} />}
                         </div>
                         <div className="contact-filed mb-30">
-                        <input id='email' value={values.email} onChange={handleChange} onBlur={handleBlur} type="email" placeholder="Enter Email" />
+                        <input id='email' value={values.email} onChange={handleChange} onBlur={handleBlur} type="email" placeholder="Email" />
                           {touched.email && <ErrorMsg error={errors.email} />}
                         </div>
                         <div className="contact-filed mb-25">
-                        <textarea id='msg' value={values.msg} onChange={handleChange} onBlur={handleBlur} placeholder="Enter  Your Message"></textarea>
+                        <textarea id='msg' value={values.msg} onChange={handleChange} onBlur={handleBlur} placeholder="Mensaje"></textarea>
                           {touched.msg && <ErrorMsg error={errors.msg} />}
                         </div>
                         <div className="form-submit">
-                           <button className="tp-grd-btn" type="submit">Send Massage</button>
+                           <button className="tp-solid-btn" type="submit">Enviar</button>
                         </div>
                         <p className="ajax-response"></p>
                      </form>
@@ -96,14 +96,14 @@ const Footer = () => {
          <div className="container">
             <div className="row align-items-center">
                <div className="col-xl-6 col-lg-8 col-md-6 col-sm-6">
-                  <p>© 2022 Nerox - Agency & Portfolio Design . All Rights Reserved.</p>
+                  <p>© 2022 Skog - Fertilizantes & Biotecnología. Todos los Derechos Reservados.</p>
                </div>
                <div className="col-xl-6 col-lg-4 col-md-6 col-sm-6">
                   <div className="ft-social">
                      <a href="#"><i className="fa-brands fa-facebook-f"></i></a>
-                     <a href="#"><i className="fa-brands fa-twitter"></i></a>
+                     <a href="#"><i className="fa-brands fa-instagram"></i></a>
                      <a href="#"><i className="fa-brands fa-youtube"></i></a>
-                     <a href="#"><i className="fa-brands fa-behance"></i></a>
+                     {/* <a href="#"><i className="fa-brands fa-behance"></i></a> */}
                   </div>
                </div>
             </div>

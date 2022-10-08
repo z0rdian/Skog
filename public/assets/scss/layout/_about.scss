@@ -130,20 +130,21 @@
                 }
                 & i{
                     display: inline-block;
-                    width: 20px;
-                    height: 20px;
-                    line-height: 20px;
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
                     text-align: center;
-                    background: var(--tp-blue-1);
-                    color: var(--tp-common-white);
-                    font-size: 10px;
-                    @include border-radius(50%);
+                    background: #ff7f11;
+                    color: #002626;
+                    font-size: 18px;
+                    border-radius: 50%;
                 }
                 & p{
                     margin-bottom: 0;
                     font-size: 16px;
                     line-height: 29px;
-                    color: var(--tp-heading-primary);
+                    // color: var(--tp-heading-primary);
+                    color: white;
                     font-weight: var(--tp-fw-medium);
                 }
                 &:hover{
