@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 const Cta = () => {
   return (
@@ -8,7 +8,9 @@ const Cta = () => {
           <div className="row justify-content-center">
             <div className="col-xxl-12 col-xl-10 col-lg-10">
               <div className="tpcta-wrapper text-center">
-                <h4 className="tp-title mb-40">¿Necesitas asistencia personalizada para tu negocio?</h4>
+                <h4 className="tp-title mb-40">
+                  ¿Necesitás asistencia personalizada para tu negocio?
+                </h4>
                 <div className="tpcta-button">
                   <Link href="/contact">
                     <a className="tp-solid-btn">Contactanos</a>
