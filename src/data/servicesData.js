@@ -17,22 +17,22 @@ const servicesData = [
       {
         id:4,
         icon:"flaticon-promote",
-        title:'Branding Design',
+        title:'Elaboramos',
       },
       {
         id:5,
         icon:"flaticon-interaction",
-        title:'Data Analysis',
+        title:'Proveemos',
       },
       {
         id:6,
         icon:"flaticon-dashboard",
-        title:'Digital Service',
+        title:'Asesoramos',
       },
       {
         id:7,
         icon:"flaticon-statistics",
-        title:'Product Design',
+        title:'Personalizamos',
       },
       {
         id:8,

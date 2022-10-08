@@ -58,7 +58,7 @@ const Sidebar = ({ headerMenu }) => {
       )}
 
       {/* <!-- sidebar area start --> */}
-      <div className={`sidebar__area ${showSidebar ? "sidebar-opened" : ""}`}>
+      <div className={`d-lg-none sidebar__area ${showSidebar ? "sidebar-opened" : ""}`}>
         <div className="sidebar__wrapper">
           <div className="sidebar__close" onClick={() => setShowSidebar(false)}>
             <button className="sidebar__close-btn" id="sidebar__close-btn">
@@ -68,21 +68,21 @@ const Sidebar = ({ headerMenu }) => {
           <div className="sidebar__content">
             <div className="sidebar__logo mb-40">
               <a href="index.html">
-                <img src="/assets/img/logo/logo.png" alt="logo" />
+                <img src="/assets/img/logo/logo.svg" alt="logo" />
               </a>
             </div>
-            <div className="sidebar__search mb-25">
+            {/* <div className="sidebar__search mb-25">
               <form action="#">
                 <input type="text" placeholder="What are you searching for?" />
                 <button type="submit" ><i className="far fa-search"></i></button>
               </form>
-            </div>
+            </div> */}
 
             <div className="mobile-menu fix">
               <nav id="mobile-menu"
                 className={`${headerMenu ? "d-block" : "d-lg-none"}`} >
                 <ul>
-                  <Collapsible trigger={<a>Home</a>} triggerTagName="div"
+                  {/* <Collapsible trigger={<a>Home</a>} triggerTagName="div"
                     triggerOpenedClassName="icon_close" triggerClassName="iconAdd" open={false}>
                     <ul onClick={() => setShowSidebar(false)}
                       className="sidebar_sub_menu submenu text-black" >
@@ -100,13 +100,21 @@ const Sidebar = ({ headerMenu }) => {
                       <li><Link href="/home-twelve">Home Photographer 4</Link></li>
                       <li><Link href="/home-thirteen">Home Politician</Link></li>
                     </ul>
-                  </Collapsible>
+                  </Collapsible> */}
 
                   <div className="single_link iconAdd">
-                    <li><Link href="/about"><a>About</a></Link></li>
+                    <li><Link href="#"><a>Productos</a></Link></li>
                   </div>
 
-                  <Collapsible trigger={<a>Pages</a>} triggerTagName="div" triggerOpenedClassName="icon_close"
+                  <div className="single_link iconAdd">
+                    <li><Link href="#"><a>¿Quiénes somos?</a></Link></li>
+                  </div>
+
+                  <div className="single_link iconAdd">
+                    <li><Link href="#"><a>Servicios</a></Link></li>
+                  </div>
+
+                  {/* <Collapsible trigger={<a>Pages</a>} triggerTagName="div" triggerOpenedClassName="icon_close"
                     triggerClassName="iconAdd" open={false}>
 
                     <div className="ms-3">
@@ -199,7 +207,7 @@ const Sidebar = ({ headerMenu }) => {
                         <a>Contact</a>
                       </Link>
                     </li>
-                  </div>
+                  </div> */}
                 </ul>
               </nav>
             </div>
@@ -228,14 +236,14 @@ const Sidebar = ({ headerMenu }) => {
               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29176.030811137334!2d90.3883827!3d23.924917699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1605272373598!5m2!1sen!2sbd"></iframe>
             </div>
             <div className="sidebar__contact mt-30 mb-20">
-              <h4>Contact Info</h4>
+              <h4>Contacto</h4>
               <ul>
                 <li className="d-flex align-items-center">
                   <div className="sidebar__contact-icon mr-15">
                     <i className="fal fa-map-marker-alt"></i>
                   </div>
                   <div className="sidebar__contact-text">
-                    <a target="_blank" rel="noreferrer" href="https://www.google.com/maps/place/Dhaka/@23.7806207,90.3492859,12z/data=!3m1!4b1!4m5!3m4!1s0x3755b8b087026b81:0x8fa563bbdd5904c2!8m2!3d23.8104753!4d90.4119873">12/A, Mirnada City Tower, NYC</a>
+                    <a target="_blank" rel="noreferrer" href="#">Argentina, CABA</a>
                   </div>
                 </li>
                 <li className="d-flex align-items-center">
@@ -243,7 +251,7 @@ const Sidebar = ({ headerMenu }) => {
                     <i className="far fa-phone"></i>
                   </div>
                   <div className="sidebar__contact-text">
-                    <a href="tel:+012-345-6789">+8801 094 0637</a>
+                    <a href="tel:#">+8801 094 0637</a>
                   </div>
                 </li>
                 <li className="d-flex align-items-center">
@@ -251,17 +259,17 @@ const Sidebar = ({ headerMenu }) => {
                     <i className="fal fa-envelope"></i>
                   </div>
                   <div className="sidebar__contact-text">
-                    <a href="/cdn-cgi/l/email-protection#added8ddddc2dfd9edcac0ccc4c183cec2c0"><span className="mailto:nerox@gmail.com" data-cfemail="0b787e7b7b64797f4b666a626725686466">nerox@gmail.com</span></a>
+                    <a href="/cdn-cgi/l/email-protection#added8ddddc2dfd9edcac0ccc4c183cec2c0"><span className="mailto:skog@gmail.com" data-cfemail="0b787e7b7b64797f4b666a626725686466">skog@gmail.com</span></a>
                   </div>
                 </li>
               </ul>
             </div>
             <div className="sidebar__social">
               <ul>
-                <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i className="fab fa-instagram"></i></a></li>
                 <li><a href="#"><i className="fab fa-twitter"></i></a></li>
                 <li><a href="#"><i className="fab fa-youtube"></i></a></li>
-                <li><a href="#"><i className="fab fa-linkedin"></i></a></li>
+                {/* <li><a href="#"><i className="fab fa-linkedin"></i></a></li> */}
               </ul>
             </div>
           </div>

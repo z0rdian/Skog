@@ -8,7 +8,8 @@
     font-size: 16px;
     font-weight: var(--tp-fw-bold);
     text-transform: uppercase;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(260.52deg, #1C99FE -4.98%, #7644FF 48.42%, #FD4766 96.9%);
+    // background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(260.52deg, #1C99FE -4.98%, #7644FF 48.42%, #FD4766 96.9%);
+    background: linear-gradient(0deg, #FF7F11, #FF7F11), linear-gradient(260.52deg, #FF7F11 -4.98%, #FF7F11 48.42%, #FF7F11 96.9%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -89,7 +90,8 @@
         top: -15px;
         left: 95%;
         transform: translateX(-95%);
-        background: linear-gradient(189.82deg, #1C99FE 0%, #7644FF 44.68%, #FD4766 85.24%);
+        background: linear-gradient(189.82deg, #ffffff 0%, #ffffff  44.68%, #ffffff 85.24%);
+        
     }
 }
 .tpbs-sub-title{

@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper";
 import blogData from '../../data/blogData';
 
-const blogs = blogData.slice(0, 5)
+const blogs = blogData.slice(0, 4)
 
 const BlogArea = ({ padd }) => {
 
@@ -14,8 +14,8 @@ const BlogArea = ({ padd }) => {
           <div className="row">
             <div className="col-xl-12">
               <div className="tp-section-title text-center mb-60">
-                <span className="tp-sub-title mb-15">#Blog & Article</span>
-                <h2 className="tp-title">Read my Blog & Article</h2>
+                {/* <span className="tp-sub-title mb-15">#Blog & Article</span> */}
+                <h2 className="tp-title">Línea Biológica</h2>
               </div>
             </div>
           </div>

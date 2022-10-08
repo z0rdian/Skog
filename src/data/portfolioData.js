@@ -1,37 +1,41 @@
 
 const portfolioData = [
-    {
-        id: 1,
-        img: 'assets/img/project/2/project-1.jpg',
-        img3:'assets/img/project/3/project-1.jpg',
-        img4:'assets/img/project/4/project-1.jpg',
-        category:'WEB DESIGN',
-        title: 'The Home of the Future could bebes',
-      },
-      {
-        id: 2,
-        img: 'assets/img/project/2/project-2.jpg',
-        img3:'assets/img/project/3/project-2.jpg',
-        img4:'assets/img/project/4/project-2.jpg',
-        category:'WEB DEVELOPMENT',
-        title: 'A big ticket gone to be an interesting'
-      },
-      {
-        id: 3,
-        img: 'assets/img/project/2/project-3.jpg',
-        img3:'assets/img/project/3/project-3.jpg',
-        img4:'assets/img/project/4/project-3.jpg',
-        category:'UI UX DESIGN',
-        title: 'What is the Difference between'
-      },
-      {
-        id: 4,
-        img: 'assets/img/project/2/project-4.jpg',
-        img3:'assets/img/project/3/project-4.jpg',
-        img4:'assets/img/project/4/project-4.jpg',
-        category:'GRAPHIC DESIGN',
-        title: 'A big ticket gone to be an interesting'
-      },
+  {
+    id: 1,
+    img: 'assets/img/project/2/project-1.png',
+    img3:'assets/img/project/3/project-1.jpg',
+    img4:'assets/img/project/4/project-1.jpg',
+    img5:'assets/img/project/2/project2-1.png',
+    category:'macronutrientes',
+    title: 'Green Marine Powder',
+  },
+  {
+    id: 2,
+    img: 'assets/img/project/2/project-2.png',
+    img3:'assets/img/project/3/project-2.jpg',
+    img4:'assets/img/project/4/project-2.jpg',
+    img5:'assets/img/project/2/project2-2.png',
+    category:'Ácido húmico',
+    title: 'Phylon K'
+  },
+  {
+    id: 3,
+    img: 'assets/img/project/2/project-3.png',
+    img3:'assets/img/project/3/project-3.jpg',
+    img4:'assets/img/project/4/project-3.jpg',
+    img5:'assets/img/project/2/project3-2.png',
+    category:'Fortificador de tejidos y estructuras de las plantas',
+    title: 'Silicasol'
+  },
+  {
+    id: 4,
+    img: 'assets/img/project/2/project-4.png',
+    img3:'assets/img/project/3/project-4.jpg',
+    img4:'assets/img/project/4/project-4.jpg',
+    img5:'assets/img/project/2/project-2.png',
+    category:'aminoácidos',
+    title: 'UPP Aminoácidos'
+  },
       {
         id: 5,
         img: 'assets/img/project/2/project-5.jpg',

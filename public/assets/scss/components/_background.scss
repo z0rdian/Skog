@@ -4,14 +4,21 @@
     - Background color
 -----------------------------------------*/
 .grey-bg {
-	background: var(--tp-grey-1);
+	// background: var(--tp-grey-1);
+	background: radial-gradient(circle,#a7e512 0,#0e4749 68%,#002626 100%);
+}
+.grey-bg1 {
+	// background: var(--tp-grey-1);
+	background: radial-gradient(circle,#002626 39%,#0e4749 70%,#a7e512 100%);
 }
 .grey-bg-2 {
 	background: var(--tp-grey-2);
 }
 
 .white-bg {
-	background: var(--tp-common-white);
+	border-radius: 20px;
+	// background: var(--tp-common-white);
+	background: #002626;
 }
 
 .black-bg {

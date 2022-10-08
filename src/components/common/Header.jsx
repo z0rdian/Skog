@@ -23,14 +23,14 @@ const Header = ({ HeaderTwo, headerEight = false,homeNine}) => {
                   <div className="logo-dark">
                     <Link href="/">
                      <a>
-                     { homeNine ? <img src="/assets/img/logo/logo-white.png" alt="logo" />
-                      : <img src="/assets/img/logo/logo.png" alt="logo" />}
+                     { homeNine ? <img src="/assets/img/logo/logo-white.svg" alt="logo" />
+                      : <img src="/assets/img/logo/logo.svg" alt="logo" />}
                      </a>
                     </Link>
                   </div>
                   <div className="logo-white">
                      <Link href="/">
-                      <a><img src="/assets/img/logo/logo-white.png" alt="logo" /></a>
+                      <a><img src="/assets/img/logo/logo-white.svg" alt="logo" /></a>
                     </Link>
                   </div>
                 </div>
@@ -38,9 +38,11 @@ const Header = ({ HeaderTwo, headerEight = false,homeNine}) => {
                   <div className="tpmenu">
                     <nav id="mobile-menu">
                       <ul>
-                        <li className="has-dropdown">
+                        {/* <li className="has-dropdown"> */}
+                        {/* display none added */}
+                        <li className='d-none'>
                           <Link href="/">
-                             <a>Home</a>
+                             <a>Inicio</a>
                           </Link>
                           <ul className="submenu">
                             <li><Link href="/">Home Designer</Link></li>
@@ -59,11 +61,13 @@ const Header = ({ HeaderTwo, headerEight = false,homeNine}) => {
                           </ul>
                         </li>
                         <li>
-                          <Link href="/about">About</Link>
+                          <Link href="#">¿Quiénes somos?</Link>
                         </li>
-                        <li className="has-dropdown megamenu-full">
-                          <a href="#">Pages</a>
-                          <ul className="megamenu">
+                        {/* <li className="has-dropdown megamenu-full"> */}
+                        <li>
+                          <a href="#">Servicios</a>
+                          {/* display none added */}
+                          <ul className="megamenu d-none">
                             <li>
                               <a href="#" className="megamenu-title">Page Layout 1</a>
 
@@ -123,23 +127,24 @@ const Header = ({ HeaderTwo, headerEight = false,homeNine}) => {
                           </ul>
                         </li>
                         <li className="has-dropdown">
-                          <Link href="/services">Services</Link>
+                          <a href="#fertilizantes" className="smoth-scroll">Productos</a>
                           <ul className="submenu">
-                            <li><Link href="/services">Services Page</Link></li>
-                            <li><Link href="/service-details">Services Deatils</Link></li>
+                            <li><a href="#fertilizantes" className="smoth-scroll">Línea fertilizantes</a></li>
+                            <li><a href="#biologicos" className="smoth-scroll">Línea biológica</a></li>
                           </ul>
                         </li>
-                        <li className="has-dropdown">
-                          <Link href="/blog">Blog</Link>
-                          <ul className="submenu">
+                        {/* <li className="has-dropdown"> */}
+                        <li>
+                          <Link href="#">Contacto</Link>
+                          <ul className="submenu d-none">
                             <li><Link href="/blog">Blog Page</Link></li>
                             <li><Link href="/blog-grid">Blog Grid</Link></li>
                             <li><Link href="/blog-details">Blog Deatils</Link></li>
                           </ul>
                         </li>
-                        <li>
+                        {/* <li>
                           <Link href="/contact">Contact</Link>
-                        </li>
+                        </li> */}
                       </ul>
                     </nav>
                   </div>
@@ -148,19 +153,20 @@ const Header = ({ HeaderTwo, headerEight = false,homeNine}) => {
                   !headerEight && <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-6">
                     <div className="tp-header-action">
                       <ul>
-                        <li className="d-none d-sm-inline-block">
+                        {/* <li className="d-none d-sm-inline-block"> */}
+                        <li className="d-none">
                           <button onClick={() => setSearchOpen(true)} href="#" className="search">
                             <i className="fas fa-search"></i>
                           </button>
                         </li>
-                        <li >
+                        <li className="d-lg-none">
                           <button onClick={() => setShowSidebar(true)} className="info-toggle-btn sidebar-toggle-btn">
                             <i className="fas fa-bars"></i>
                           </button>
                         </li>
                         <li>
                           {/* dark mode button start  */}
-                          <div className="mode-switch-wrapper my_switcher setting-option">
+                          <div className="d-none mode-switch-wrapper my_switcher setting-option">
                             <input type="checkbox" className="checkbox" id="chk" />
                             <label className="label" htmlFor="chk">
                               <i onClick={() => setTheme('dark')} className="fas fa-sun tp-dark-icon setColor dark theme__switcher-btn" data-theme="dark"></i>
