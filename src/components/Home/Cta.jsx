@@ -8,9 +8,13 @@ const Cta = () => {
           <div className="row justify-content-center">
             <div className="col-xxl-12 col-xl-10 col-lg-10">
               <div className="tpcta-wrapper text-center">
+<<<<<<< HEAD
                 <h4 className="tp-title mb-40">
                   ¿Necesitás asistencia personalizada para tu negocio?
                 </h4>
+=======
+                <h4 className="tp-title mb-40">¿Necesitas asistencia personalizada para tu negocio?</h4>
+>>>>>>> ff6bb9715fc2989786a87b67650058fb4340bdae
                 <div className="tpcta-button">
                   <Link href="/contact">
                     <a className="tp-solid-btn">Contactanos</a>
