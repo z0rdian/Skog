@@ -18,21 +18,26 @@ const servicesData = [
         id:4,
         icon:"flaticon-promote",
         title:'Elaboramos',
+        desc: 'Materias primas según los requerimientos de nuestros clientes. ',
       },
       {
         id:5,
         icon:"flaticon-interaction",
         title:'Proveemos',
+        desc: 'Los mejores fertilizantes y microorganismos simbióticos. ¡Nos ayudamos entre todos!',
       },
       {
         id:6,
         icon:"flaticon-dashboard",
         title:'Asesoramos',
+        desc: 'Atención personalizada para nuestros clientes de nuestros profesionales.',
       },
       {
         id:7,
         icon:"flaticon-statistics",
         title:'Personalizamos',
+        desc: 'Ofrecemos servicios de busqueda, registro e importación a pedido. ¡No deje que sea solo un sueño!',
+
       },
       {
         id:8,

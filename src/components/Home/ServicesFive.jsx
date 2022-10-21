@@ -36,7 +36,8 @@ const ServicesFive = () => {
                             <a>{item.title}</a>
                           </Link>
                         </h4>
-                        Materias primas segun el requerimiento del cliente. (Sourcing, registro e importación)                        <div className="tpservices__btn mt-30">
+                        <p>{item.desc}</p>
+                        <div className="tpservices__btn mt-30">
                           {/* <Link href={`/service-details/${item.id}`}> */}
                           <Link href="#">
                             <a>
