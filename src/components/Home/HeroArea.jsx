@@ -11,8 +11,8 @@ const HeroArea = () => {
                 {/* <div className="tpdesign-hero-image mb-55">
                   <img src="assets/img/hero/hero-3.jpg" alt="hero" />
                 </div> */}
-                <span className="tpdesign-sub-title mb-45 mt-40 pt-100">¡Hola! 👋 Somos SKOG</span>
-                <h2 className="tpdesign-title pb-10 mb-200 mt-80">Especialistas en fertilizantes <br />  y biotecnología</h2>
+                <span className="tpdesign-sub-title mb-45 mt-40 pt-50 ">¡Hola! 👋 Somos SKOG</span>
+                <h2 className="tpdesign-title pb-120 mb-200 mt-80">Especialistas en fertilizantes <br />  y biotecnología</h2>
                 {/* <div className="down-arrow">
                   <a href="#bio-wrapper" className="smoth-scroll">
                     <i className="fal fa-long-arrow-down"></i>
