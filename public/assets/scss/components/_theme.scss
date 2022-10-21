@@ -424,7 +424,6 @@ body::-webkit-scrollbar-thumb {
 
 .videoContainer {
   /* align-items: center; */
-  overflow: hidden;
   height: 100%;
   width: 100%;
   display: flex;
@@ -445,5 +444,4 @@ video {
   top: 0%;
   position: absolute;
   object-fit: cover;
-  overflow: hidden;
 }
