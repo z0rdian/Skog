@@ -1,3 +1,4 @@
+import Head from "next/head";
 import React from 'react';
 import Header from '../common/Header';
 import HeroArea from './HeroArea';
@@ -5,7 +6,7 @@ import HeroArea from './HeroArea';
 const HeroContainerArea = () => {
   return (
     <div className='videoContainer'>
-      <video src={require('../assets/videoBg.mp4')} autoPlay loop muted />
+        <video src={require('../assets/videoBg.mp4')} autoPlay loop muted />
         <Header className="nav-header-container" />
         <HeroArea className="hero-container" />
     </div>
