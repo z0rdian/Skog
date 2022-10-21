@@ -2,7 +2,7 @@
 const portfolioData = [
   {
     id: 1,
-    // img: 'assets/img/project/2/project-1.png',
+    img: 'assets/img/project/2/project-1.png',
     img3:'assets/img/project/3/project-1.jpg',
     img4:'assets/img/project/4/project-1.jpg',
     img5:'assets/img/project/2/project2-1.png',
@@ -11,7 +11,7 @@ const portfolioData = [
   },
   {
     id: 2,
-    // img: 'assets/img/project/2/project-2.png',
+    img: 'assets/img/project/2/project-2.png',
     img3:'assets/img/project/3/project-2.jpg',
     img4:'assets/img/project/4/project-2.jpg',
     img5:'assets/img/project/2/project2-2.png',
@@ -20,7 +20,7 @@ const portfolioData = [
   },
   {
     id: 3,
-    // img: 'assets/img/project/2/project-3.png',
+    img: 'assets/img/project/2/project-3.png',
     img3:'assets/img/project/3/project-3.jpg',
     img4:'assets/img/project/4/project-3.jpg',
     img5:'assets/img/project/2/project3-2.png',
@@ -29,7 +29,7 @@ const portfolioData = [
   },
   {
     id: 4,
-    // img: 'assets/img/project/2/project-4.png',
+    img: 'assets/img/project/2/project-4.png',
     img3:'assets/img/project/3/project-4.jpg',
     img4:'assets/img/project/4/project-4.jpg',
     img5:'assets/img/project/2/project-2.png',

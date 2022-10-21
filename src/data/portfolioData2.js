@@ -2,25 +2,25 @@
 const portfolioData2 = [
       {
         id: 1,
-        img5:'assets/img/project/2/project2-1.png',
+        img:'assets/img/project/2/project2-1.png',
         category:'Simbionte obligado',
         title: 'Micorrizas Arbusculares',
       },
       {
         id: 2,
-        img5:'assets/img/project/2/project2-2.png',
+        img:'assets/img/project/2/project2-2.png',
         category:'Defensa contra plagas',
         title: 'Verticillium Lecanii'
       },
       {
         id: 3,
-        img5:'assets/img/project/2/project3-2.png',
+        img:'assets/img/project/2/project3-2.png',
         category:'Crecimiento vegetal',
         title: 'Azospirillum Brasilense'
       },
       {
         id: 4,
-        img5:'assets/img/project/2/project4-2.png',
+        img:'assets/img/project/2/project4-2.png',
         category:'Raíces saludables',
         title: 'Trichoderma Harzianum'
       },
