@@ -58,7 +58,7 @@ const Sidebar = ({ headerMenu }) => {
       )}
 
       {/* <!-- sidebar area start --> */}
-      <div className={`d-lg-none sidebar__area ${showSidebar ? "sidebar-opened" : ""}`}>
+      <div className={`d-lg-none sidebar__area  ${showSidebar ? "sidebar-opened" : ""}`}>
         <div className="sidebar__wrapper">
           <div className="sidebar__close" onClick={() => setShowSidebar(false)}>
             <button className="sidebar__close-btn" id="sidebar__close-btn">

@@ -406,28 +406,31 @@ img {
 
 .hero-container {
   align-items: center;
-  text-align: center;
+  text-align: center; 
 }
 
 .videoContainer {
   /* align-items: center; */
   overflow: hidden;
   height: 100%;
+  width: 100%;
   display: flex;
+  object-fit: cover;
   justify-content: center;
   /* align-items: center; */
-  max-width: 2000px;
-  margin: 0 auto;
-  max-height: 1200px;
+  // max-width: 2000px;
+  // margin: 0 auto;
+  // max-height: 1200px;
   flex-direction: column;
   background: rgba(35, 31, 32, 0.788);
 }
 
 video {
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   z-index: -1;
   top: 0%;
   position: absolute;
-  object-fit: contain;
+  object-fit: cover;
   overflow: hidden;
 }

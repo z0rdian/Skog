@@ -3,7 +3,7 @@ import React from 'react';
 const HeroArea = () => {
   return (
     <>
-      <section className="tphero-area pt-140 pb-140">
+      <section className="tphero-area">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-xl-12">
@@ -11,7 +11,7 @@ const HeroArea = () => {
                 {/* <div className="tpdesign-hero-image mb-55">
                   <img src="assets/img/hero/hero-3.jpg" alt="hero" />
                 </div> */}
-                <span className="tpdesign-sub-title mb-45 mt-40">¡Hola! 👋 Somos SKOG</span>
+                <span className="tpdesign-sub-title mb-45 mt-40 pt-100">¡Hola! 👋 Somos SKOG</span>
                 <h2 className="tpdesign-title pb-10 mb-200 mt-80">Especialistas en fertilizantes <br />  y biotecnología</h2>
                 {/* <div className="down-arrow">
                   <a href="#bio-wrapper" className="smoth-scroll">

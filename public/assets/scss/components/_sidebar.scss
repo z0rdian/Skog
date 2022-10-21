@@ -3,7 +3,7 @@
 // sidebar
 .sidebar{
     &__area{
-        position: absolute;
+        position: fixed;
         right: -495px;
         top: 0;
         width: 465px;
@@ -16,6 +16,8 @@
         -ms-overflow-style: none; /* for Internet Explorer, Edge */
         scrollbar-width: none; /* for Firefox */
         overflow-y: scroll;
+        display: none;
+        
 
         &::-webkit-scrollbar {
             display: none; /* for Chrome, Safari, and Opera */
@@ -31,6 +33,7 @@
   
         &.sidebar-opened{
             right: 0vw;
+            display: block;
         }
     }
     &__wrapper{
