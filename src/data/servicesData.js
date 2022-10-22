@@ -36,7 +36,7 @@ const servicesData = [
         id:7,
         icon:"flaticon-statistics",
         title:'Personalizamos',
-        desc: 'Ofrecemos servicios de busqueda, registro e importación a pedido. ¡No deje que sea solo un sueño!',
+        desc: 'Ofrecemos servicios de búsqueda, registro e importación a pedido. ¡No deje que sea solo un sueño!',
 
       },
       {
