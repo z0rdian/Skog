@@ -14,27 +14,27 @@ const Sidebar = ({ headerMenu }) => {
   const galleryImages = [
     {
       id: 1,
-      img:"/assets/img/project/sm/project-7.jpg",
+      img: "/assets/img/project/sm/project-7.jpg",
     },
     {
       id: 2,
-      img:"/assets/img/project/sm/project-8.jpg"
+      img: "/assets/img/project/sm/project-8.jpg",
     },
     {
       id: 3,
-      img:"/assets/img/project/sm/project-9.jpg"
+      img: "/assets/img/project/sm/project-9.jpg",
     },
     {
       id: 4,
-      img:"/assets/img/project/sm/project-10.jpg"
+      img: "/assets/img/project/sm/project-10.jpg",
     },
     {
       id: 5,
-      img:"/assets/img/project/sm/project-13.jpg"
+      img: "/assets/img/project/sm/project-13.jpg",
     },
     {
       id: 6,
-      img:"/assets/img/project/sm/project-12.jpg"
+      img: "/assets/img/project/sm/project-12.jpg",
     },
   ];
   const lightBoxImages = galleryImages.map((img) => img.img);
@@ -58,7 +58,11 @@ const Sidebar = ({ headerMenu }) => {
       )}
 
       {/* <!-- sidebar area start --> */}
-      <div className={`d-lg-none sidebar__area  ${showSidebar ? "sidebar-opened" : ""}`}>
+      <div
+        className={`d-lg-none sidebar__area  ${
+          showSidebar ? "sidebar-opened" : ""
+        }`}
+      >
         <div className="sidebar__wrapper">
           <div className="sidebar__close" onClick={() => setShowSidebar(false)}>
             <button className="sidebar__close-btn" id="sidebar__close-btn">
@@ -67,9 +71,9 @@ const Sidebar = ({ headerMenu }) => {
           </div>
           <div className="sidebar__content">
             <div className="sidebar__logo mb-40">
-              <a href="/">
+              <Link href="/">
                 <img src="/assets/img/logo/logo.svg" alt="logo" />
-              </a>
+              </Link>
             </div>
             {/* <div className="sidebar__search mb-25">
               <form action="#">
@@ -79,8 +83,10 @@ const Sidebar = ({ headerMenu }) => {
             </div> */}
 
             <div className="mobile-menu fix">
-              <nav id="mobile-menu"
-                className={`${headerMenu ? "d-block" : "d-lg-none"}`} >
+              <nav
+                id="mobile-menu"
+                className={`${headerMenu ? "d-block" : "d-lg-none"}`}
+              >
                 <ul>
                   {/* <Collapsible trigger={<a>Home</a>} triggerTagName="div"
                     triggerOpenedClassName="icon_close" triggerClassName="iconAdd" open={false}>
@@ -103,15 +109,27 @@ const Sidebar = ({ headerMenu }) => {
                   </Collapsible> */}
 
                   <div className="single_link iconAdd">
-                    <li><Link href="/portfolio-details/1"><a>Productos</a></Link></li>
+                    <li>
+                      <Link href="/portfolio-details/1">
+                        <a>Productos</a>
+                      </Link>
+                    </li>
                   </div>
 
                   <div className="single_link iconAdd">
-                    <li><Link href="#"><a>¿Quiénes somos?</a></Link></li>
+                    <li>
+                      <Link href="#">
+                        <a>¿Quiénes somos?</a>
+                      </Link>
+                    </li>
                   </div>
 
                   <div className="single_link iconAdd">
-                    <li><Link href="#"><a>Servicios</a></Link></li>
+                    <li>
+                      <Link href="#">
+                        <a>Servicios</a>
+                      </Link>
+                    </li>
                   </div>
 
                   {/* <Collapsible trigger={<a>Pages</a>} triggerTagName="div" triggerOpenedClassName="icon_close"
@@ -212,13 +230,22 @@ const Sidebar = ({ headerMenu }) => {
               </nav>
             </div>
 
-            <div className={`sidebar__img ${headerMenu ? 'd-none' : 'd-none d-lg-block'} mb-20`}>
+            <div
+              className={`sidebar__img ${
+                headerMenu ? "d-none" : "d-none d-lg-block"
+              } mb-20`}
+            >
               <div className="row gx-2">
                 {galleryImages.map((image, index) => (
                   <div key={image.id} className="col-4">
-                    <div onClick={() => setShowSidebar(false)}
-                      className="sidebar__single-img w-img mb-10">
-                      <button onClick={() => setOpen(true)} className="popup-image">
+                    <div
+                      onClick={() => setShowSidebar(false)}
+                      className="sidebar__single-img w-img mb-10"
+                    >
+                      <button
+                        onClick={() => setOpen(true)}
+                        className="popup-image"
+                      >
                         <a onClick={() => setPhotoIndex(index)}>
                           <img src={`${image.img}`} alt="" />
                         </a>
@@ -226,7 +253,6 @@ const Sidebar = ({ headerMenu }) => {
                     </div>
                   </div>
                 ))}
-
               </div>
             </div>
             {/* <div className={`sidebar__map ${headerMenu ? 'd-none' : 'd-none d-lg-block'} mb-15`}>
@@ -240,7 +266,9 @@ const Sidebar = ({ headerMenu }) => {
                     <i className="fal fa-map-marker-alt"></i>
                   </div>
                   <div className="sidebar__contact-text">
-                    <a target="_blank" rel="noreferrer" href="#">Argentina, CABA</a>
+                    <a target="_blank" rel="noreferrer" href="#">
+                      Argentina, CABA
+                    </a>
                   </div>
                 </li>
                 <li className="d-flex align-items-center">
@@ -256,16 +284,35 @@ const Sidebar = ({ headerMenu }) => {
                     <i className="fal fa-envelope"></i>
                   </div>
                   <div className="sidebar__contact-text">
-                    <a href="#"><span className="mailto:skog@gmail.com" data-cfemail="0b787e7b7b64797f4b666a626725686466">skog@gmail.com</span></a>
+                    <a href="#">
+                      <span
+                        className="mailto:skog@gmail.com"
+                        data-cfemail="0b787e7b7b64797f4b666a626725686466"
+                      >
+                        skog@gmail.com
+                      </span>
+                    </a>
                   </div>
                 </li>
               </ul>
             </div>
             <div className="sidebar__social">
               <ul>
-                <li><a href="#"><i className="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i className="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i className="fab fa-youtube"></i></a></li>
+                <li>
+                  <a href="#">
+                    <i className="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i className="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i className="fab fa-youtube"></i>
+                  </a>
+                </li>
                 {/* <li><a href="#"><i className="fab fa-linkedin"></i></a></li> */}
               </ul>
             </div>
@@ -275,7 +322,8 @@ const Sidebar = ({ headerMenu }) => {
 
       <div
         onClick={() => setShowSidebar(false)}
-        className={`${showSidebar ? "body-overlay opened" : "body-overlay"}`}></div>
+        className={`${showSidebar ? "body-overlay opened" : "body-overlay"}`}
+      ></div>
       {/* <!-- sidebar area end -->  */}
     </>
   );

@@ -1,16 +1,18 @@
-import Link from 'next/link';
+import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { Navigation, Pagination } from "swiper";
-import projectSliderData2 from '../../data/portfolioData2';
+import projectSliderData2 from "../../data/portfolioData2";
 
-const projectData2 = projectSliderData2.slice(0, 4)
+const projectData2 = projectSliderData2.slice(0, 4);
 
 const ProjectArea2 = () => {
-
   return (
     <>
-      <section id="biologicos" className="tpproject-area2 pb-110 pt-60 p-relative">
+      <section
+        id="biologicos"
+        className="tpproject-area2 pb-110 pt-60 p-relative"
+      >
         <div className="container">
           <div className="row">
             <div className="col-xl-12">
@@ -24,8 +26,13 @@ const ProjectArea2 = () => {
             <div className="col-xl-12">
               <div className="tp-test-main-wrapper tp-arrow-style tp-dot-style p-relative">
                 <div className="tp-slide-active pt-50">
-                  <Swiper navigation={{ nextEl: '.tp-slick-next2', prevEl: '.tp-slick-prev2', }}
-                    modules={[Navigation, Pagination]} className="pb-80"
+                  <Swiper
+                    navigation={{
+                      nextEl: ".tp-slick-next2",
+                      prevEl: ".tp-slick-prev2",
+                    }}
+                    modules={[Navigation, Pagination]}
+                    className="pb-80"
                     spaceBetween={25}
                     slidesPerView={1}
                     pagination={{ clickable: true }}
@@ -45,7 +52,7 @@ const ProjectArea2 = () => {
                       },
                     }}
                   >
-                    {projectData2.map(item => {
+                    {projectData2.map((item) => {
                       return (
                         <SwiperSlide key={item.id}>
                           <div className="tpproject-2">
@@ -53,7 +60,9 @@ const ProjectArea2 = () => {
                               <img src={item.img} alt="" />
                             </div>
                             <div className="tpproject-2-text">
-                              <span className="catagory mb-10">#{item.category}</span>
+                              <span className="catagory mb-10">
+                                #{item.category}
+                              </span>
                               <h5 className="tpproject-2-title">
                                 <Link href={`/portfolio-details/${item.id}`}>
                                   <a>{item.title}</a>
@@ -69,17 +78,25 @@ const ProjectArea2 = () => {
                             </div>
                           </div>
                         </SwiperSlide>
-                      )
-                    })
-                    }
+                      );
+                    })}
                   </Swiper>
                 </div>
 
                 <div>
-                  <button type="button" className="tp-slick-prev2 swiper-arrow2"><i className="far fa-long-arrow-left"></i></button>
-                  <button type="button" className="tp-slick-next2 swiper-arrow2"><i className="far fa-long-arrow-right"></i></button>
+                  <button
+                    type="button"
+                    className="tp-slick-prev2 swiper-arrow2"
+                  >
+                    <i className="far fa-long-arrow-left"></i>
+                  </button>
+                  <button
+                    type="button"
+                    className="tp-slick-next2 swiper-arrow2"
+                  >
+                    <i className="far fa-long-arrow-right"></i>
+                  </button>
                 </div>
-
               </div>
             </div>
           </div>

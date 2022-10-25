@@ -1,8 +1,8 @@
-import Link from 'next/link';
+import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { Autoplay, Navigation } from "swiper";
-import portfolioData from '../../data/portfolioData';
+import portfolioData from "../../data/portfolioData";
 
 const PortfolioThree = () => {
   return (
@@ -16,10 +16,18 @@ const PortfolioThree = () => {
             <div className="col-xl-6 col-lg-6 col-md-6 col-sm-4">
               <div className="tpfrn-nav-wrapper p-relative">
                 <div className="trfrn-arrow-display tpfrn-arrow-wrap">
-                  <button type="button" className="tp-swiper-prev swiper-arrow trfrn-arrow-style">
-                    <i className="fa-light fa-chevron-left"></i></button>
-                  <button type="button" className="tp-swiper-next swiper-arrow trfrn-arrow-style">
-                    <i className="fa-light fa-chevron-right"></i></button>
+                  <button
+                    type="button"
+                    className="tp-swiper-prev swiper-arrow trfrn-arrow-style"
+                  >
+                    <i className="fa-light fa-chevron-left"></i>
+                  </button>
+                  <button
+                    type="button"
+                    className="tp-swiper-next swiper-arrow trfrn-arrow-style"
+                  >
+                    <i className="fa-light fa-chevron-right"></i>
+                  </button>
                 </div>
               </div>
             </div>
@@ -27,8 +35,11 @@ const PortfolioThree = () => {
           <div className="row mt-50">
             <div className="col-xxl-12">
               <div className="tpfrn-project__slider tpfrn-slide-active swiper-container">
-
-                <Swiper navigation={{ nextEl: '.tp-swiper-next', prevEl: '.tp-swiper-prev', }}
+                <Swiper
+                  navigation={{
+                    nextEl: ".tp-swiper-next",
+                    prevEl: ".tp-swiper-prev",
+                  }}
                   modules={[Navigation]}
                   spaceBetween={25}
                   slidesPerView={1}
@@ -49,7 +60,7 @@ const PortfolioThree = () => {
                     },
                   }}
                 >
-                  {portfolioData.slice(0, 6).map(item => {
+                  {portfolioData.slice(0, 6).map((item) => {
                     return (
                       <SwiperSlide key={item.id}>
                         <div className="tpfrn-project">
@@ -61,7 +72,9 @@ const PortfolioThree = () => {
                             </Link>
                           </div>
                           <div className="tpfrn-project__content">
-                            <span className="tpfrn-project-sub-title mb-10">#{item.category}</span>
+                            <span className="tpfrn-project-sub-title mb-10">
+                              #{item.category}
+                            </span>
                             <h5 className="tpfrn-project-title">
                               <Link href={`/portfolio-details/${item.id}`}>
                                 <a>{item.title}</a>
@@ -69,17 +82,17 @@ const PortfolioThree = () => {
                             </h5>
                             <div className="tpservices__btn mt-20">
                               <Link href={`/portfolio-details/${item.id}`}>
-                                <a><i className="flaticon-right-arrow-1"></i></a>
+                                <a>
+                                  <i className="flaticon-right-arrow-1"></i>
+                                </a>
                               </Link>
                             </div>
                           </div>
                         </div>
                       </SwiperSlide>
-                    )
-                  })
-                  }
+                    );
+                  })}
                 </Swiper>
-
               </div>
             </div>
           </div>
