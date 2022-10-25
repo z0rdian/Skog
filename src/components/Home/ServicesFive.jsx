@@ -9,16 +9,13 @@ const ServicesFive = () => {
           <div className="row align-items-center">
             <div className="col-xl-6 col-lg-6">
               <div className="tp-section-title p-relative">
-                <div className="separator">
                 </div>
                 <h3 className="tpds-title"> <span>Nuestros</span> Servicios</h3>
               </div>
             </div>
             <div className="col-xl-6 col-lg-6">
               <div className="tpservices-info">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamc.</p>
               </div>
-            </div>
           </div>
           <div className="row g-0 mt-70">
             {

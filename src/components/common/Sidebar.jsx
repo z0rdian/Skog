@@ -67,7 +67,7 @@ const Sidebar = ({ headerMenu }) => {
           </div>
           <div className="sidebar__content">
             <div className="sidebar__logo mb-40">
-              <a href="index.html">
+              <a href="/">
                 <img src="/assets/img/logo/logo.svg" alt="logo" />
               </a>
             </div>
@@ -103,7 +103,7 @@ const Sidebar = ({ headerMenu }) => {
                   </Collapsible> */}
 
                   <div className="single_link iconAdd">
-                    <li><Link href="#"><a>Productos</a></Link></li>
+                    <li><Link href="/portfolio-details/1"><a>Productos</a></Link></li>
                   </div>
 
                   <div className="single_link iconAdd">
@@ -212,9 +212,6 @@ const Sidebar = ({ headerMenu }) => {
               </nav>
             </div>
 
-            <div className={`sidebar__text ${headerMenu ? 'd-none' : 'd-none d-lg-block'}`}>
-              <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and will give you a complete account of the system and expound the actual teachings of the great explore</p>
-            </div>
             <div className={`sidebar__img ${headerMenu ? 'd-none' : 'd-none d-lg-block'} mb-20`}>
               <div className="row gx-2">
                 {galleryImages.map((image, index) => (
@@ -259,7 +256,7 @@ const Sidebar = ({ headerMenu }) => {
                     <i className="fal fa-envelope"></i>
                   </div>
                   <div className="sidebar__contact-text">
-                    <a href="/cdn-cgi/l/email-protection#added8ddddc2dfd9edcac0ccc4c183cec2c0"><span className="mailto:skog@gmail.com" data-cfemail="0b787e7b7b64797f4b666a626725686466">skog@gmail.com</span></a>
+                    <a href="#"><span className="mailto:skog@gmail.com" data-cfemail="0b787e7b7b64797f4b666a626725686466">skog@gmail.com</span></a>
                   </div>
                 </li>
               </ul>

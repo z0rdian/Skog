@@ -16,7 +16,7 @@ const PortfolioDetailsArea = () => {
                 <div className="aboutme-content">
                   <h3 className="tpabout-xd-title mb-50"><b>Banking App Design &</b> Development</h3>
                 </div>
-                <div className="aboutme-feature-list mt-25">
+                {/* <div className="aboutme-feature-list mt-25">
                   <ul>
                     <li><p>Client:<a href="#"> Rasalina De Willam (USA)</a></p></li>
                     <li><p>Date:<a href="#"> March 21, 2020</a></p></li>
@@ -30,7 +30,7 @@ const PortfolioDetailsArea = () => {
                       </div>
                     </li>
                   </ul>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

@@ -8,7 +8,19 @@ const portfolioData = [
     img5:'assets/img/project/2/project2-1.png',
     category:'macronutrientes',
     title: 'Green Marine Powder',
+    composicion: <pre>Extracto de algas,<br/>
+    Ascophyllum nodosum:<br/><br/>
+    Ácido algínico – – – – – – – 16 %<br/>
+    Manitol – – – – – – – – – – 4,5 %<br/>
+    Nitrógeno – – – – – – – – – 2,5 %<br/>
+    K2O– – – – – – – – – – – – 18,5 %<br/></pre>,
+    caracteristicas: '100% Ascophyllum nodosum presentado en forma de escamas hidrosolubles, con una elevada concentración de manitol y alginatos y una equilibrada proporción de aminoácidos, vitaminas, fitoreguladores y nutrientes esenciales. Todas las sustancias activas actúan de forma sinérgica estimulando el desarrollo en cualquier fase fenológica activa del ciclo. Induce la producción de autodefensas y desencadena los mecanismos de recuperación de las plantas frente al estrés, a la vez que favorece el desarrollo vegetativo equilibrado y la fructificación.',
+    dosis:<pre>Aplicación foliar:<br/>50-100 g/hl<br/><br/>Fertirrigación:<br/>2-4 kg/ha/aplicación</pre>,
+    siguiente: '2',
+    atras: '4',
+    product: 'project-1.png'
   },
+
   {
     id: 2,
     img: 'assets/img/project/2/project-2.png',
@@ -16,8 +28,19 @@ const portfolioData = [
     img4:'assets/img/project/4/project-2.jpg',
     img5:'assets/img/project/2/project2-2.png',
     category:'Ácido húmico',
-    title: 'Phylon K'
+    title: 'Phylon K',
+    composicion: <pre>
+    Extracto húmico total – – 83%<br/>
+    Ácidos húmicos  – – – – – 62%<br/>
+    Ácidos fúlvicos – – – – – 21%<br/>
+    K2O – – – – – – – – – – –  9%<br/></pre>,
+    caracteristicas: 'Fertilizante orgánico de gran pureza y elevada concentración en ácidos húmicos. Presentado en forma de polvo hidrosoluble que se disuelve completa e instantáneamente, sin obstruir filtros. Mejora las propiedades físicas, químicas y biológicas de cualquier suelo a la vez que favorece la asimilación radicular de macro y micronutrientes.',
+    dosis:<pre>Fertirrigación:<br/>3-5 kg/ha/aplicación</pre>,
+    siguiente: '3',
+    atras: '1',
+    product: 'project-2.png'
   },
+
   {
     id: 3,
     img: 'assets/img/project/2/project-3.png',
@@ -25,8 +48,19 @@ const portfolioData = [
     img4:'assets/img/project/4/project-3.jpg',
     img5:'assets/img/project/2/project3-2.png',
     category:'Fortificador de tejidos y estructuras de las plantas',
-    title: 'Silicasol'
+    title: 'Silicasol',
+    composicion: <pre>
+    Si0 2 – – – – – – – – – 30 %<br/>
+    Potasio – – – – – – – –  2 %<br/>
+    0xígeno – – – – – – – – 16 %<br/>
+    </pre>,
+    caracteristicas: 'Silicato potásico que lignifica y fortalece los tejidos a nivel estructural gracias al aumento de la flexibilidad y de la resistencia de las paredes celulares. Dificulta el desarrollo de enfermedades y mitiga los daños producidos por agresiones climáticas (como quemaduras solares), conservando la piel de los frutos sin dejar manchas ni residuos sobre la cosecha. Aplicado al suelo, optimiza la absorción de fósforo y de nitrógeno, incrementa la capacidad de intercambio catiónico y disminuye la toxicidad por metales. Aplicar cada 15-25 días durante el desarrollo vegetativo y la formación de órganos de reserva. El aporte de potasio en forma de silicato es muy eficiente durante el crecimiento de frutos.',
+    dosis:<pre>Fertirrigación:<br/>5-10 L/ha/aplicación</pre>,
+    siguiente: '4',
+    atras: '2',
+    product: 'project-3.png'
   },
+
   {
     id: 4,
     img: 'assets/img/project/2/project-4.png',
@@ -34,7 +68,15 @@ const portfolioData = [
     img4:'assets/img/project/4/project-4.jpg',
     img5:'assets/img/project/2/project-2.png',
     category:'aminoácidos',
-    title: 'UPP Aminoácidos'
+    title: 'UPP Aminoácidos',
+    composicion: <pre>
+    Aminoácidos libres de<br/>origen vegetal – – – – – – – 50 %<br/><br/>
+    Nitrógeno– – – – – – – – – – 11 %<br/></pre>,
+    caracteristicas: 'Aminoácidos ecológicos de origen vegetal con un aminograma equilibrado. Estimulan el crecimiento activo de tejidos con el menor gasto de energía. Favorece el desarrollo vegetal desde la primera fase de crecimiento y permite superar situaciones de estrés o etapas críticas dentro del ciclo. Es una de las fuentes de nitrógeno ecológico (11%) más potentes y rentable, macroelemento fundamental para el desarrollo de las plantas durante todo el ciclo de cultivo.',
+    dosis:<pre>Aplicación foliar:<br/>150-300 g/hl <br/><br/>Fertirrigación:<br/>2,5-5 kg/ha/aplicación</pre>,
+    siguiente: '1',
+    atras: '3',
+    product: 'project-4.png'
   },
       {
         id: 5,

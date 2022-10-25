@@ -714,7 +714,7 @@
         text-transform: uppercase;
         font-weight: var(--tp-fw-sbold);
         display: inline-block;
-        color: var(--tp-heading-primary);
+        color: var(--tp-theme-1);
         & i{
             font-size: 20px;
             margin: 0 8px;
@@ -722,7 +722,8 @@
             top: 2px;
         }
         &:hover{
-            color: var(--tp-theme-1);
+            color: white;
+            font-size: 18px;
         }
     }
 }

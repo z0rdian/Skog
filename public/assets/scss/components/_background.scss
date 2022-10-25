@@ -30,3 +30,29 @@
 .black-bg-2 {
 	background: var(--tp-common-black-2);
 }
+
+.w-95 {
+	width: 95%!important;
+}
+
+.fuente {
+	font-family: var(--bs-font-monospace);
+	text-align: justify;
+}
+.animated-bg {
+background-color: #d7d7d7;
+background: linear-gradient(-45deg, #FF7F11, #002626, #002626, #FF7F11);
+background-size: 500% 500%;
+padding-top: 50px;
+padding-bottom: 50px;
+animation: animate 15s cubic-bezier(0.36, 0.14, 0.25, 1) infinite;
+-webkit-animation: animate 15s ease infinite;
+flex-wrap: wrap;
+}
+
+@media (min-width: 1200px) {
+	.custom-p {
+		padding-right: 20rem!important;
+		padding-left: 20rem!important;
+	}
+  }
