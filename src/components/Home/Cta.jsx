@@ -12,7 +12,7 @@ const Cta = () => {
                   ¿Necesitás asistencia personalizada para tu negocio?
                 </h4>
                 <div className="tpcta-button">
-                  <Link href="/contact">
+                  <Link href="#">
                     <a className="tp-solid-btn">Contactanos</a>
                   </Link>
                 </div>
