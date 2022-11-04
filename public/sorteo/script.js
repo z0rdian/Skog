@@ -1,12 +1,12 @@
-var options = ["Algadelta100", "Algadelta200", "UPP 100", "KING CLON", "LEONARDITA 200ml", "Väx 30ml", "Ento 30ml", "Phos 30ml", "Zeta 30ml", "EMA 30ML", "REMERA SKOG", "$20", "Tira de nuevo", "STIKER", "STIKER ", "STIKER", "STIKER ", "STIKER"];
+var options = ["Algadelta100", "Algadelta200", "UPP 100", "KING CLON", "LEONARDITA 200ml", "Väx 30ml", "Ento 30ml","STICKER", "Phos 30ml", "Zeta 30ml", "STICKER ", "EMA 30ML", "REMERA SKOG", "Tira de nuevo", "STICKER" ,];
 
 var startAngle = 0;
 var arc = Math.PI / (options.length / 2);
 var spinTimeout = null;
 
 var spinArcStart = 10;
-var spinTime = 0;
-var spinTimeTotal = 0;
+var spinTime = 155;
+var spinTimeTotal = 155;
 
 var ctx;
 
@@ -55,9 +55,9 @@ function drawRouletteWheel() {
 
 /* 
       ctx.fillStyle = getColor(i, options.length); */
-      var my_gradient = ctx.createLinearGradient(0, 0, 0, 170);
-      my_gradient.addColorStop(0, "yellow");
-      my_gradient.addColorStop(1, "#95c623");
+      var my_gradient = ctx.createLinearGradient(0, 0, 0, 670);
+      my_gradient.addColorStop(0, "#0e4749");
+      my_gradient.addColorStop(1, "#6c950a");
       ctx.fillStyle = my_gradient;
 
 
@@ -68,11 +68,11 @@ function drawRouletteWheel() {
       ctx.fill();
 
       ctx.save();
-      ctx.shadowOffsetX = -1;
-      ctx.shadowOffsetY = -1;
-      ctx.shadowBlur    = 0;
-      ctx.shadowColor   = "rgb(220,220,220)";
-      ctx.fillStyle = "black";
+      ctx.shadowOffsetX = -2;
+      ctx.shadowOffsetY = -2;
+      ctx.shadowBlur    = 5;
+      ctx.shadowColor   = "rgb(0,0,0)";
+      ctx.fillStyle = "white";
       ctx.translate(350 + Math.cos(angle + arc / 2) * textRadius, 
                     350 + Math.sin(angle + arc / 2) * textRadius);
       ctx.rotate(angle + arc / 2 + Math.PI / 2);
@@ -98,7 +98,7 @@ function drawRouletteWheel() {
 
 function spin() {
   spinAngleStart = Math.random() * 10 + 10;
-  spinTime = 0;
+  spinTime = 10;
   spinTimeTotal = Math.random() * 3 + 4 * 1000;
   rotateWheel();
 }
