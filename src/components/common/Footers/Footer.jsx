@@ -97,6 +97,7 @@ const Footer = () => {
                     name="contactanos"
                     onSubmit={handleSubmit}
                   >
+                  <input type="hidden" name="form-name" value="contactanos" />
                     <div className="contact-filed mb-20">
                       <input
                         id="name"
