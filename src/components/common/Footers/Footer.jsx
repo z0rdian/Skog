@@ -91,22 +91,23 @@ const Footer = () => {
                     </h2>
                   </div>
                   <form
-                    id="contact-form"
+                  //   id="contact-form"
                     method="POST" 
                     data-netlify="true"
                     name="contactanos"
-                    onSubmit={handleSubmit}
+                  //   onSubmit={handleSubmit}
                   >
                   <input type="hidden" name="form-name" value="contactanos" />
                     <div className="contact-filed mb-20">
                       <input
                         id="name"
                         name="name"
-                        value={values.name}
-                        onChange={handleChange}
-                        onBlur={handleBlur}
+                        // value={values.name}
+                        // onChange={handleChange}
+                        // onBlur={handleBlur}
                         type="text"
                         placeholder="Nombre"
+                        required
                       />
                       {touched.name && <ErrorMsg error={errors.name} />}
                     </div>
@@ -114,21 +115,23 @@ const Footer = () => {
                       <input
                         id="email"
                         name="email"
-                        value={values.email}
-                        onChange={handleChange}
-                        onBlur={handleBlur}
+                        // value={values.email}
+                        // onChange={handleChange}
+                        // onBlur={handleBlur}
                         type="email"
                         placeholder="Email"
+                        required
                       />
                       {touched.email && <ErrorMsg error={errors.email} />}
                     </div>
                     <div className="contact-filed mb-25">
                       <textarea
-                        id="msg"
-                        name="msg"
-                        value={values.msg}
-                        onChange={handleChange}
-                        onBlur={handleBlur}
+                        type="text"
+                        id="text"
+                        name="text"
+                        // value={values.msg}
+                        // onChange={handleChange}
+                        // onBlur={handleBlur}
                         placeholder="Mensaje"
                       ></textarea>
                       {touched.msg && <ErrorMsg error={errors.msg} />}
@@ -138,7 +141,7 @@ const Footer = () => {
                         Enviar
                       </button>
                     </div>
-                    <p className="ajax-response"></p>
+                    {/* <p className="ajax-response"></p> */}
                   </form>
                 </div>
               </div>
