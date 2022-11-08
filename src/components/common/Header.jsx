@@ -14,11 +14,6 @@ const Header = ({ HeaderTwo, headerEight = false, homeNine }) => {
   return (
     <>
       <header>
-        <div
-          className={`tp-header-area ${HeaderTwo && "box-plr-85"} ${
-            homeNine ? "header-style-9" : ""
-          }`}
-        >
           <div
             className={`tp-header-area-inner ${HeaderTwo ? "" : "inner-border"} 
           ${headerSticky && "header-sticky"} ${
@@ -112,7 +107,7 @@ const Header = ({ HeaderTwo, headerEight = false, homeNine }) => {
                           </ul>
                         </li>
                         <li>
-                          <Link href="#">¿Quiénes somos?</Link>
+                          <Link href="#quienes">¿Quiénes somos?</Link>
                         </li>
                         {/* <li className="has-dropdown megamenu-full"> */}
                         <li>
@@ -275,16 +270,16 @@ const Header = ({ HeaderTwo, headerEight = false, homeNine }) => {
                                 Línea fertilizantes
                               </a>
                             </li>
-                            <li>
+                            {/* <li>
                               <a href="#biologicos" className="smoth-scroll">
                                 Línea biológica
                               </a>
-                            </li>
+                            </li> */}
                           </ul>
                         </li>
                         {/* <li className="has-dropdown"> */}
                         <li>
-                          <Link href="#">Contacto</Link>
+                          <Link href="#contacto">Contacto</Link>
                           <ul className="submenu d-none">
                             <li>
                               <Link href="/blog">Blog Page</Link>
@@ -403,7 +398,7 @@ const Header = ({ HeaderTwo, headerEight = false, homeNine }) => {
               </div>
             </div>
           </div>
-        </div>
+
       </header>
 
       {/* <!-- modal-search-start --> */}

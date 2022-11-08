@@ -3,7 +3,7 @@ import React from 'react';
 const BioArea = () => {
   return (
     <>
-      <div id="bio-wrapper" className="bio-wrapper grey-bg pt-190">
+      <div id="quienes" className="bio-wrapper grey-bg pt-190">
         <div className="container-md rounded">
           {/* biograpy-area start */}
           <div className="biograpy-area pt-80 pb-70 white-bg px-5">

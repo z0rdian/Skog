@@ -27,7 +27,7 @@ const HomeMain = () => {
       <ProjectArea/>
       {/* <Testimonial/> */}
       {/* <BrandArea/> */}
-      <ProjectArea2 />
+      {/* <ProjectArea2 /> */}
       {/* <BlogArea/> */}
       <Cta/>
       <Footer/>

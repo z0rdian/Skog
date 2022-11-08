@@ -110,7 +110,7 @@ const Sidebar = ({ headerMenu }) => {
 
                   <div className="single_link iconAdd">
                     <li>
-                      <Link href="/portfolio-details/1">
+                      <Link href="#fertilizantes">
                         <a>Productos</a>
                       </Link>
                     </li>
@@ -118,7 +118,7 @@ const Sidebar = ({ headerMenu }) => {
 
                   <div className="single_link iconAdd">
                     <li>
-                      <Link href="#">
+                      <Link href="#quienes">
                         <a>¿Quiénes somos?</a>
                       </Link>
                     </li>
@@ -126,7 +126,7 @@ const Sidebar = ({ headerMenu }) => {
 
                   <div className="single_link iconAdd">
                     <li>
-                      <Link href="#">
+                      <Link href="#servicios">
                         <a>Servicios</a>
                       </Link>
                     </li>
@@ -266,7 +266,7 @@ const Sidebar = ({ headerMenu }) => {
                     <i className="fal fa-map-marker-alt"></i>
                   </div>
                   <div className="sidebar__contact-text">
-                    <a target="_blank" rel="noreferrer" href="#">
+                    <a target="_blank" rel="noreferrer">
                       Argentina, CABA
                     </a>
                   </div>
@@ -276,7 +276,7 @@ const Sidebar = ({ headerMenu }) => {
                     <i className="far fa-phone"></i>
                   </div>
                   <div className="sidebar__contact-text">
-                    <a href="tel:#">+8801 094 0637</a>
+                    <a href="https://wa.me/message/">+8801 094 0637</a>
                   </div>
                 </li>
                 <li className="d-flex align-items-center">
@@ -294,27 +294,21 @@ const Sidebar = ({ headerMenu }) => {
                     </a>
                   </div>
                 </li>
+                <li className="d-flex align-items-center">
+                  <div className="sidebar__contact-icon mr-15">
+                  <i className="fab fa-instagram" href="https://www.instagram.com/skog.bio/"></i>
+                  </div>
+                  <div className="sidebar__contact-text">
+                    <a href="https://www.instagram.com/skog.bio/">
+                      <span>
+                        skog.bio
+                      </span>
+                    </a>
+                  </div>
+                </li>
               </ul>
             </div>
             <div className="sidebar__social">
-              <ul>
-                <li>
-                  <a href="#">
-                    <i className="fab fa-instagram"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fab fa-youtube"></i>
-                  </a>
-                </li>
-                {/* <li><a href="#"><i className="fab fa-linkedin"></i></a></li> */}
-              </ul>
             </div>
           </div>
         </div>

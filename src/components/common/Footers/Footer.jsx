@@ -19,7 +19,7 @@ const Footer = () => {
 
   return (
     <>
-      <footer>
+      <footer id='contacto'>
       <div className="tpfooter-area black-bg pt-115 pb-40">
          <div className="container">
             <div className="row">
@@ -56,8 +56,8 @@ const Footer = () => {
                               <i className="fa-solid fa-phone-flip"></i>
                            </div>
                            <div className="footer__list-text">
-                              <p><a href="tel:+08987878773345">+08 98787 8773 345</a></p>
-                              <p><a href="tel:+08987878773345">+08 98787 8773 345</a></p>
+                              <p><a href="https://wa.me/message/">+08 98787 8773 345</a></p>
+                              <p><a href="https://wa.me/message/">+08 98787 8773 345</a></p>
                            </div>
                         </div>
                      </div>
@@ -69,7 +69,8 @@ const Footer = () => {
                         <span className="tp-sub-title mb-15">#Díganos</span>
                         <h2 className="tp-title tp-title-df mb-20">Comuníquese ahora</h2>
                      </div>
-                     <form id="contact-form" onSubmit={handleSubmit}>
+                     <form id="contact-form" name="contacto" data-netlify="true" method="POST" onSubmit={handleSubmit}>
+                     <input type="hidden" name="form-name" value="contacto" />
                         <div className="contact-filed mb-20">
                         <input id='name' value={values.name} onChange={handleChange} onBlur={handleBlur} type="text" placeholder="Nombre" />
                           {touched.name && <ErrorMsg error={errors.name} />}
@@ -100,9 +101,9 @@ const Footer = () => {
                </div>
                <div className="col-xl-6 col-lg-4 col-md-6 col-sm-6">
                   <div className="ft-social">
-                     <a href="#"><i className="fa-brands fa-facebook-f"></i></a>
-                     <a href="#"><i className="fa-brands fa-instagram"></i></a>
-                     <a href="#"><i className="fa-brands fa-youtube"></i></a>
+                     {/* <a href="#"><i className="fa-brands fa-facebook-f"></i></a> */}
+                     <a href="https://www.instagram.com/skog.bio/"><i className="fa-brands fa-instagram"></i></a>
+                     {/* <a href="#"><i className="fa-brands fa-youtube"></i></a> */}
                      {/* <a href="#"><i className="fa-brands fa-behance"></i></a> */}
                   </div>
                </div>
