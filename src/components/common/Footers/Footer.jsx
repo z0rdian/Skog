@@ -43,7 +43,7 @@ const Footer = () => {
                       </div>
                       <div className="footer__list-text">
                         <p>
-                          <a href="#" target="blank">
+                          <a>
                             C.A.B.A - Argentina{" "}
                           </a>
                         </p>
