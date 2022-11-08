@@ -127,7 +127,7 @@ const ProductAdditional = ({productItem}) => {
                           <div className="product__details-comment ">
                             <div className="comment-title mb-20">
                               <h3>Add a review</h3>
-                              <p>Your email address will not be published. Required fields are marked *</p>
+                              <p>Your email address will not be published. s are marked *</p>
                             </div>
                             <div className="comment-rating mb-20">
                               <span>Overall ratings</span>

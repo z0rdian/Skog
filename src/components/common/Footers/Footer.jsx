@@ -69,8 +69,7 @@ const Footer = () => {
                         <span className="tp-sub-title mb-15">#Díganos</span>
                         <h2 className="tp-title tp-title-df mb-20">Comuníquese ahora</h2>
                      </div>
-                     <form id="contact-form" name="contacto" data-netlify="true" method="POST" onSubmit={handleSubmit}>
-                     <input type="hidden" name="form-name" value="contacto" />
+                     <form id="contact-form" netlify onSubmit={handleSubmit}>
                         <div className="contact-filed mb-20">
                         <input id='name' value={values.name} onChange={handleChange} onBlur={handleBlur} type="text" placeholder="Nombre" />
                           {touched.name && <ErrorMsg error={errors.name} />}
