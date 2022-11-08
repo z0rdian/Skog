@@ -92,6 +92,7 @@ const Footer = () => {
                   </div>
                   <form
                     id="contact-form"
+                    method="POST" 
                     data-netlify="true"
                     name="contactanos"
                     onSubmit={handleSubmit}
