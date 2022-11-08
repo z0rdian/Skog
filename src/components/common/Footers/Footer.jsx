@@ -93,11 +93,13 @@ const Footer = () => {
                   <form
                     id="contact-form"
                     data-netlify="true"
+                    name="contactanos"
                     onSubmit={handleSubmit}
                   >
                     <div className="contact-filed mb-20">
                       <input
                         id="name"
+                        name="name"
                         value={values.name}
                         onChange={handleChange}
                         onBlur={handleBlur}
@@ -109,6 +111,7 @@ const Footer = () => {
                     <div className="contact-filed mb-30">
                       <input
                         id="email"
+                        name="email"
                         value={values.email}
                         onChange={handleChange}
                         onBlur={handleBlur}
@@ -120,6 +123,7 @@ const Footer = () => {
                     <div className="contact-filed mb-25">
                       <textarea
                         id="msg"
+                        name="msg"
                         value={values.msg}
                         onChange={handleChange}
                         onBlur={handleBlur}
