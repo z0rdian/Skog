@@ -29,14 +29,14 @@ const ServicesFive = () => {
                       <div className="tpservices__content">
                         <h4 className="tpservices__title mb-25">
                           {/* <Link href={`/service-details/${item.id}`}> */}
-                          <Link href="#">
+                          <Link href="#fertilizantes">
                             <a>{item.title}</a>
                           </Link>
                         </h4>
                         <p>{item.desc}</p>
                         <div className="tpservices__btn mt-30">
                           {/* <Link href={`/service-details/${item.id}`}> */}
-                          <Link href="#">
+                          <Link href="#fertilizantes">
                             <a>
                               <i className="flaticon-right-arrow-1"></i>
                             </a>
