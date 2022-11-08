@@ -111,11 +111,11 @@ const Header = ({ HeaderTwo, headerEight = false, homeNine }) => {
                         </li>
                         {/* <li className="has-dropdown megamenu-full"> */}
                         <li>
-                          <a href="#">Servicios</a>
+                          <a href="#servicios">Servicios</a>
                           {/* display none added */}
                           <ul className="megamenu d-none">
                             <li>
-                              <a href="#" className="megamenu-title">
+                              <a href="#servicios" className="megamenu-title">
                                 Page Layout 1
                               </a>
 
